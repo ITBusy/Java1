@@ -1,7 +1,7 @@
 # Java1
 <=> Exclude/Extract
-type Exclude<T, U> = T extends U ? never : T;
-type Extract<T, U> = T extends U ? T : never;
+  type Exclude<T, U> = T extends U ? never : T;
+  type Extract<T, U> = T extends U ? T : never;
 
 <=> Exclude: Loại bỏ những types ở T nếu như những types này gán được cho U
 type SomeDiff = Exclude<'a' | 'b' | 'c', 'c' | 'd'>; // 'a' | 'b'. 'c' đã bị removed.
